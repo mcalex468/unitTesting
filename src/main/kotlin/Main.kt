@@ -20,7 +20,7 @@ fun main() {
     }
 
     val descompteBo = descompteBoSocial()
-    if ()
+
 
     println(descompteBo)
 
