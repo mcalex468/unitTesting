@@ -7,7 +7,7 @@ fun readInt(mensaje:String,intMin:Int,intMax:Int):Int{
     var valorInt=0
     var valorCorrecto:Boolean
     do {
-        print("$mensaje ")
+        println("$mensaje ")
         valorCorrecto=scan.hasNextInt()
         if (!valorCorrecto){
             println("ERROR: introdueix un nombre enter")
