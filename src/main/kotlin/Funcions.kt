@@ -19,13 +19,15 @@ fun consumAigua(): Double {
     var cuotaVariable = 0.0
 
     // Solicitamos al usuario que ingrese la cantidad de litros consumidos al mes.
-    val consum = readInt("Indica els litres que consums al mes", 0, 1000)
+    val consum = readInt("Indica els litres que consums al mes:", 0, 1000)
 
     // Calcular la cuota variable basada en el consumo.
     when (consum) {
         in (0..49) -> cuotaVariable = 0.0 * consum // No se paga cuota variable para consumos menores a 50 litros.
-        in (50..200) -> cuotaVariable = (0.15 * consum).toDouble() // Se aplica un precio de 0.15€ por litro para consumos entre 50 y 200 litros.
-        in (200..999999999) -> cuotaVariable = (0.30 * consum).toDouble() // Se aplica un precio de 0.30€ por litro para consumos mayores a 200 litros.
+        in (50..200) -> cuotaVariable =
+            (0.15 * consum).toDouble() // Se aplica un precio de 0.15€ por litro para consumos entre 50 y 200 litros.
+        in (200..999999999) -> cuotaVariable =
+            (0.30 * consum).toDouble() // Se aplica un precio de 0.30€ por litro para consumos mayores a 200 litros.
     }
 
     return cuotaVariable
@@ -88,13 +90,15 @@ fun descompteBoSocial(): Double {
     // Se pregunta al usuario si posee el Bono Social (Sí/No).
     val boSocial = readBoolean("Poseeixes Bo Social?")
 
+
     // Si posee el Bono Social, se aplica un descuento del 80%.
     if (boSocial) {
-        descompteBo = 0.8
+        descompteBo = 0.2
     }
 
     return descompteBo
 }
+
 
 
 
