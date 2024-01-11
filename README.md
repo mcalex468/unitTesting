@@ -29,17 +29,11 @@ FuncionsKt / MainKt / ConsoleColors / Utilities
 
 #### Funcions
 
+##### Fun benvinguda 
+Dona la benvinguda al programa !
+![j].(https://github.com/mcalex468/unitTesting/blob/master/funcBenvinguda.png)
+
 ##### Fun cuotaFixa
-/**
- * Retorna la cuota fixa mensual.
- *
- * @return La cuota fixa mensual.
- */
-fun cuotaFixa(): Double {
-    // La cuota fixa és un valor constant de 6.0 euros.
-    val cuotaFixa = 6.0
-    return cuotaFixa
-}
 
 ##### Fun consumAigua
 
