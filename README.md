@@ -33,46 +33,21 @@ FuncionsKt / MainKt / ConsoleColors / Utilities
 Dona la benvinguda al programa !
 ![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/funcBenvinguda.png)
 
-##### Fun cuotaFixa
+##### Fun quotaFixa
+
+![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/func1.png)
+
+##### Fun litresConsumits
+
+![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/func2.png)
 
 ##### Fun consumAigua
 
-/**
- * Calcula la cuota variable basada en el consumo mensual d'aigua.
- *
- * @return La cuota variable calculada.
- */
-fun consumAigua(): Double {
-    // Inicializamos la cuota variable a 0.0.
-    var cuotaVariable = 0.0
 
-    // Solicitamos al usuario que ingrese la cantidad de litros consumidos al mes.
-    val consum = readInt("Indica els litres que consums al mes:", 0, 1000)
-
-    // Calcular la cuota variable basada en el consumo.
-    when (consum) {
-        in (0..49) -> cuotaVariable = 0.0 * consum // No se paga cuota variable para consumos menores a 50 litros.
-        in (50..200) -> cuotaVariable =
-            (0.15 * consum).toDouble() // Se aplica un precio de 0.15€ por litro para consumos entre 50 y 200 litros.
-        in (200..999999999) -> cuotaVariable =
-            (0.30 * consum).toDouble() // Se aplica un precio de 0.30€ por litro para consumos mayores a 200 litros.
-    }
-
-    return cuotaVariable
-}
+![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/func3.png)
 
 ##### Fun familiaNombrosa
 
-/**
- * Pregunta si la familia és nombrosa o monoparental.
- *
- * @return True si la familia és nombrosa o monoparental, False si no.
- */
-fun familiaNombrosa(): Boolean {
-    // Se solicita al usuario que indique si son una familia nombrosa o monoparental (Sí/No).
-    val nombrosaMonoparental = readBoolean("Sou familia nombrosa (S / N)?")
-    return nombrosaMonoparental
-}
 
 ##### Fun membres
 
