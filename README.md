@@ -31,7 +31,7 @@ FuncionsKt / MainKt / ConsoleColors / Utilities
 
 ##### Fun benvinguda 
 Dona la benvinguda al programa !
-![j].(https://github.com/mcalex468/unitTesting/blob/master/funcBenvinguda.png)
+![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/funcBenvinguda.png)
 
 ##### Fun cuotaFixa
 
