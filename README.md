@@ -7,6 +7,7 @@
 - [Advertencies](#Advertencies)
 - [Funcions](#Funcions)
 - [Funcionament](#Funcionament)
+- [Tester](#Tester)
 
 #### Introdució
 Aquesta aplicació tracta de diverses preguntes formulades, per poder calcular adequadament el preu final a pagar de quota d'aigua en aquest cas es el cálcul d'un mes. Te diverses funcions (7) , totes aquestes reflexades al MainKt .
@@ -72,3 +73,44 @@ Es poden observar les diverses preguntes amb els resultats en una "factura final
 ![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/mainFuncionando1.png)
 
 
+#### Tester
+
+No funciona correctament a Intellij, per tant no deixa fer push, ho comparteixo aquí per poder veure-ho.
+
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+
+class FuncionsKtTest {
+    @Test
+    fun testconsumAigua(){
+        var expected = 0.15
+        assertEquals(expected, consumAigua(50))
+
+        expected = 0.0
+        assertEquals(expected, consumAigua(25))
+
+        expected = 0.3
+        assertEquals(expected, consumAigua(201))
+    }
+
+    @Test
+    fun testdescompteFamiliaNombrosaoMonoparental(){
+        var expected = 0.4
+        assertEquals(expected, descompteFamiliaNombrosaoMonoparental(true,4))
+
+        expected = 0.0
+        assertEquals(expected, descompteFamiliaNombrosaoMonoparental(false, 1))
+
+        expected = 0.5
+        assertEquals(expected, descompteFamiliaNombrosaoMonoparental(true, 14))
+    }
+
+    @Test
+    fun testdescompteBoSocial(){
+        var expected = 0.0
+        assertEquals(expected, descompteBoSocial(false))
+
+        expected = 0.8
+        assertEquals(expected, descompteBoSocial(true))
+    }
+}
