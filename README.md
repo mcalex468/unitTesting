@@ -6,6 +6,7 @@
 - [Introducció](#Introducció)
 - [Advertencies](#Advertencies)
 - [Funcions](#Funcions)
+- [Funcionament](#Funcionament)
 
 #### Introdució
 Aquesta aplicació tracta de diverses preguntes formulades, per poder calcular adequadament el preu final a pagar de quota d'aigua en aquest cas es el cálcul d'un mes. Te diverses funcions (7) , totes aquestes reflexades al MainKt .
@@ -61,7 +62,13 @@ Dona la benvinguda al programa !
 ![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/func7i8.png)
 
 
+#### Funcionament
+
+Es poden observar les diverses preguntes amb els resultats en una "factura final"
+
+![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/mainFuncionando.png)
 
 
+![Texto alternativo](https://github.com/mcalex468/unitTesting/blob/master/mainFuncionando1.png)
 
 
