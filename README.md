@@ -77,6 +77,7 @@ Es poden observar les diverses preguntes amb els resultats en una "factura final
 
 No funciona correctament a Intellij, per tant no deixa fer push, ho comparteixo aquí per poder veure-ho.
 
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
@@ -90,7 +91,7 @@ class FuncionsKtTest {
         assertEquals(expected, consumAigua(25))
 
         expected = 0.3
-        assertEquals(expected, consumAigua(201))
+        assertEquals(expected, consumAigua(250))
     }
 
     @Test
@@ -102,7 +103,7 @@ class FuncionsKtTest {
         assertEquals(expected, descompteFamiliaNombrosaoMonoparental(false, 1))
 
         expected = 0.5
-        assertEquals(expected, descompteFamiliaNombrosaoMonoparental(true, 14))
+        assertEquals(expected, descompteFamiliaNombrosaoMonoparental(true, 7))
     }
 
     @Test
